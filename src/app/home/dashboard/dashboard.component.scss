@@ -1,0 +1,25 @@
+.full-width
+{
+    width: 100%!important;
+}
+.d-flex
+{    margin-left: 0px;
+}
+
+.set-padding
+{
+padding-top:31px
+}
+.pull-left
+{
+     margin-left: auto;
+    height:100!important;
+
+}
+@media screen and (max-width: 690px) {
+
+    .set-padding-location
+    {
+    padding-top: 27px;
+  }
+}

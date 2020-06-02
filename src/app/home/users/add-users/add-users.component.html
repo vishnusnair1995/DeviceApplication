@@ -1,0 +1,37 @@
+<div class ="container-fluid  backGroundSet">
+    <form [formGroup]="addUserForm">
+    <div class ="row">
+        <div class ="div col-12 col-md-8 col-lg-8 col-xl-8">
+            <div class ="row headLine">
+            <h6 class ="header">Add New User</h6>
+            </div>
+            <div class="form-group">
+                <label for="userID" class="">User ID</label>
+                <input id="userID" type="text" formControlName ="userId" class="form-control" required="">
+              </div>
+              <div class="form-group">
+                <label for="pass1" class="">Password</label>
+                <input id="pass1" type="password" name="pass1" formControlName ="password" class="form-control" required="">
+              </div>
+              <div class="form-group">
+                <label for="pass2" class="">Confirm Password</label>
+                <input id="pass2" type="password" name="pass2" formControlName ="cpassword" class="form-control" required="">
+              </div>
+
+        </div>
+        <div class="div col-12 col-md-4 col-lg-4 col-xl-4 ">
+            <div class="vertical-line"></div>
+            <div class ="align">
+              <div class="row">
+                <button class ="submitButton" mat-raised-button color="primary" >Configure</button>
+              </div>
+              <div class ="mt-2 row">
+                <button class="cancelButton" mat-raised-button >Cancel</button>
+              </div>
+            </div>
+             </div>
+            </div>
+
+</form>
+</div>
+

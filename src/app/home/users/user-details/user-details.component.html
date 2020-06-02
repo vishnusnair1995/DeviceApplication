@@ -1,0 +1,75 @@
+<div class ="container-fluid">
+    <div class ="row">
+        <div class ="align-Left">
+            <button mat-raised-button color="primary"  (click) ="addUser()">Add New User</button>
+        </div>
+    </div>
+    <div class = "row mt-4">
+        <div class ="col-12 col-md-12 col sm-12 col-lg-12">
+            <mat-table [dataSource]="dataSource" matSort>  <!-- ID Column -->
+
+                <ng-container matColumnDef="id">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header>
+                     Id   </mat-header-cell>
+                    <mat-cell *matCellDef="let row"> {{row.id}}</mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="userId">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header>
+                        User Id </mat-header-cell>
+                    <mat-cell *matCellDef="let row"> {{row.userId}} </mat-cell>
+                </ng-container>
+
+                <!-- Progress Column -->
+                <ng-container matColumnDef="operation">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header>  </mat-header-cell>
+                    <mat-cell *matCellDef="let row let i=index;">
+                        <button  class="btn" type="button" (click)= "startEditing(i)" name="">
+                            <i class="fa fa-pencil-square-o" style="font-size: 23px;"></i>
+                        </button>
+                    </mat-cell>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="fullName">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header> Full Name  </mat-header-cell>
+                    <mat-cell *matCellDef="let row"> {{row.fullName}} </mat-cell>
+                </ng-container>
+
+                <!-- Color Column -->
+                <ng-container matColumnDef="email">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header> Email  </mat-header-cell>
+                    <mat-cell *matCellDef="let row" [style.color]="row.email"> {{row.email}} </mat-cell>
+                </ng-container>
+
+                <!-- Color Column -->
+
+                <ng-container matColumnDef="editOperation">
+                    <mat-header-cell  *matHeaderCellDef mat-sort-header>  </mat-header-cell>
+                    <mat-cell *matCellDef="let row">
+                        <a routerLink = "/home/users/modify-user" style="float: left;"><i class="fa fa-edit fa-2x" style="font-size: 23px;"></i></a>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="deleteOperation">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header>  </mat-header-cell>
+                    <mat-cell *matCellDef="let row">
+                        <a  style="float: left;"><i class="fa fa-trash fa-2x" style="font-size: 23px;"></i></a>
+                    </mat-cell>
+                </ng-container>
+
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;">
+                </mat-row>
+            </mat-table>
+
+
+
+
+    <!-- Copyright 2018 Google Inc. All Rights Reserved.
+        Use of this source code is governed by an MIT-style license that
+        can be found in the LICENSE file at http://angular.io/license -->
+
+        </div>
+    </div>
+</div>

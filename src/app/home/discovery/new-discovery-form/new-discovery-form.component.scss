@@ -1,0 +1,48 @@
+::ng-deep .cdk-overlay-pane
+{
+
+    pointer-events: auto;
+
+    width: 69% !important;
+    bottom: 11% !important;
+    right: 0% !important;
+    height: 80% !important;
+    z-index: 9 !important;
+    position: relative!important;
+    // top:5%;
+    top:0%;
+
+}
+
+.mat-form-field {
+    margin-top: 16px;
+  }
+  .modal-header
+{
+    width: 133vh;
+    position: relative;
+    right: 5%;
+    bottom: 24px;
+}
+
+.modal-title
+{
+    color: white;
+    background-color: #295670;
+}
+.close
+{
+    position: relative;
+    left: 21px;
+    bottom: 56px;
+}
+.mdb-color {
+    /* background-color: #97614e; */
+    background-color: #295670;
+}
+
+::ng-deep .mat-dialog-container {
+
+    padding: initial!important;
+    overflow: hidden!important;
+}

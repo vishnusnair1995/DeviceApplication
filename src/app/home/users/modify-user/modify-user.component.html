@@ -1,0 +1,102 @@
+<div class ="container-fluid">
+    <div class ="row">
+        <h6 style ="position: relative;
+        left: 15px;">Modify User:    Admin</h6>
+</div>
+
+<div class ="container-fluid  backGroundSet">
+    <form [formGroup]="modifyUserForm">
+
+
+
+
+            <div class ="row">
+                <div class ="div col-12 col-md-8 col-lg-8 col-xl-8">
+                    <div class ="row headLine">
+                    <h6 class ="header">User Information</h6>
+                    </div>
+                    <div class="row form-group">
+                        <div class = "col-md-2 col-lg-2 col-xl-2">
+                            <label for="userID" class="">Password</label>
+                        </div>
+                        <div class = "col-md-10 col-lg-10 col-xl-10">
+                            <button type="button" class="btn-sm btn btn-secondary " onclick="resetPassword()">Reset Password</button>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class = "col-md-2 col-lg-2 col-xl-2">
+                            <label for="userID" class="">Full Name</label>
+                        </div>
+                        <div class = "col-md-10 col-lg-10 col-xl-10">
+                            <input matInput id="userID" type="text" formControlName ="fullName" class="form-control" required="">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class = "col-md-2 col-lg-2 col-xl-2">
+                            <label for="pass1" class="">Email</label>
+                        </div>
+                        <div class = "col-md-10 col-lg-10 col-xl-10">
+                            <input matInput id="pass1" type="password" name="pass1" formControlName ="email" class="form-control" required="">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class = "col-md-2 col-lg-2 col-xl-2">
+                            <label for="pass2" class="">Work Phone</label>
+                        </div>
+                        <div class = "col-md-10 col-lg-10 col-xl-10">
+                            <input matInput id="pass2" type="password" name="pass2" formControlName ="wPhone" class="form-control" required="">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class = "col-md-2 col-lg-2 col-xl-2">
+                            <label for="timeZoneId">Time Zone</label>
+                        </div>
+                        <div class = "col-md-10 col-lg-10 col-xl-10">
+                            <select class="form-control custom-select" formControlName ="timeZone" id="timeZoneId" name="timeZoneId">
+                                <option *ngFor="let tz of tzNames" [value]="tz">
+                                    {{ tz }}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class = "col-md-6 col-lg-6 col-xl-6">
+                            <label for="timeZoneId">Available Role</label>
+                            <select class="form-control custom-select" multiple size = 3 formControlName ="availableRole" id="timeZoneId" name="timeZoneId">
+                                <option *ngFor="let role of availableRoles" [value]="role">
+                                    {{ role }}
+                                </option>
+                            </select>
+                            <button style="margin-top:5px" type="button" #currentField class="btn btn-sm btn-secondary pull-right" id="roles.doAdd"(click) ="addRoles()">Add &nbsp;››&nbsp;</button>
+                        </div>
+                        <div class = "col-md-6 col-lg-6 col-xl-6">
+                            <label for="timeZoneId">Currently In User</label>
+                            <select class="form-control custom-select" multiple size = 3 formControlName ="CurrentRole" id="timeZoneId" name="timeZoneId">
+                                <option *ngFor="let role of currentRoles" [value]="role">
+                                    {{ role }}
+                                </option>
+                            </select>
+                            <button style="margin-top:5px" type="button" class="btn btn-sm btn-secondary pull-right" (click) ="removeRoles()" id="roles.doAdd" >Remove &nbsp;››&nbsp;</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="div col-12 col-md-4 col-lg-4 col-xl-4 ">
+                    <div class="vertical-line"></div>
+                    <div class ="align">
+                    <div class="row">
+                        <button class ="submitButton" mat-raised-button color="primary" >Finish</button>
+                    </div>
+                    <div class ="mt-2 row">
+                        <button class="cancelButton" mat-raised-button >Cancel</button>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+
+    </form>
+</div>
+
+

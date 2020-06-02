@@ -1,0 +1,57 @@
+.header
+{
+    background: #295670;
+    width: 96%;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    left: 17px;
+}
+.vertical-line
+{
+    position: absolute;
+    width: 1px;
+    height: 270px;
+    background: #ced4da;
+    right: auto;
+    align-content: center;
+}
+.backGroundSet
+{
+    background-color: white;
+    background: white;
+}
+.mat-raised-button
+{
+    font-size: 14px;
+    color: white;
+    font-style: normal;
+    background: #295670;
+    border-color: #295670;
+}
+.align
+{
+    position: relative;
+    top: 50%;
+    left: 30%;
+}
+.submitButton
+{
+    width:50%;
+}
+.cancelButton
+{
+    width: 50%;
+    background-color: white;
+    background: white;
+    color: black;
+}
+
+.cancelButton:hover
+{
+color: white;
+background-color:#295670;
+background: #295670;;
+}

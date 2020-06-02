@@ -1,0 +1,12 @@
+
+<div mat-dialog-content>
+  <p>Rename</p>
+  <mat-form-field>
+    <mat-label>Enter User Id</mat-label>
+    <input matInput [(ngModel)]= "userId">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="userId" cdkFocusInitial>Ok</button>
+</div>

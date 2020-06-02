@@ -1,0 +1,30 @@
+<div>
+    <h4 class="modal-title" id="modalHeader">Add Discovery</h4>
+    <button mat-button mat-dialog-close type="button" class="close" data-dismiss="modal" style="color:white;outline: none;">×</button>
+
+</div>
+
+<div id="registration" class="conatiner col-md-12">
+    <form id="regForm" [formGroup]="registrationForm">
+      <mat-horizontal-stepper #stepper linear>
+        <mat-step formGroupName="generalForm"
+          [stepControl]="registrationForm.get('generalForm')">
+          <ng-template matStepLabel>General</ng-template>
+          <app-new-discovery-form1 [regForm]="registrationForm"></app-new-discovery-form1>
+        </mat-step>
+        <mat-step formGroupName="snmp"
+        [stepControl]="registrationForm.get('snmp')">
+          <ng-template matStepLabel>SNMP Parameters</ng-template>
+          <app-new-discovery-form2 [regForm]="registrationForm"></app-new-discovery-form2>
+        </mat-step>
+        <mat-step formGroupName="credForm" [stepControl]="registrationForm.get('credForm')">
+          <ng-template matStepLabel> NETCONF/REST Credentials(optional)</ng-template>
+          <app-new-discovery-form3 [regForm]="registrationForm"></app-new-discovery-form3>
+        </mat-step>
+         <mat-step>
+            <ng-template matStepLabel>Schedule</ng-template>
+            <app-new-discovery-form4 [regForm]="registrationForm"></app-new-discovery-form4>
+        </mat-step>
+      </mat-horizontal-stepper>
+    </form>
+  </div>

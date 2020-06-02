@@ -1,0 +1,63 @@
+<div id="generalForm" [formGroup]= "regForm">
+    <div class ="container-fluid">
+        <div class = "row">
+            <div class ="col-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="form-group " formGroupName="generalForm">
+                <label>Name*</label>
+                <input type="text" class="form-control" formControlName="name">
+                </div>
+            </div>
+            <div class ="col-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="form-group" formGroupName="generalForm">
+                <label>Device Group </label>
+                <input type="text" class="form-control" formControlName="deviceGroup">
+                </div>
+            </div>
+        </div>
+        <div class = "row">
+            <h5>IP Range</h5>
+        </div>
+        <div class = "mt-2 row">
+            <div class ="col-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="form-group" formGroupName="generalForm">
+                <label>From IP Address*</label>
+                <input type="text" class="form-control" formControlName="fIp">
+                </div>
+            </div>
+            <div class ="col-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="form-group" formGroupName="generalForm">
+                    <label>To IP Address*</label>
+                    <input type="text" class="form-control" formControlName="tIp">
+                </div>
+            </div>
+        </div>
+        <div class ="mt-2 row">
+            <div class ="col-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="form-group" formGroupName="generalForm">
+                    <label>Number Of Retries*</label>
+                    <input type="text" class="form-control" formControlName="retryCount">
+                </div>
+            </div>
+            <div class ="col-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="form-group " formGroupName="generalForm">
+                    <label>TimeOut*</label>
+                    <input type="text" class="form-control" formControlName="timeOut">
+                </div>
+            </div>
+        </div>
+        <div class ="mt-2 row">
+            <div class ="col-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="form-group" formGroupName="generalForm">
+                    <label>Connection Type*</label>
+                    <div class ="mt-2"></div>
+                    <mat-radio-group aria-label="Select an option" formControlName="conType">
+                        <mat-radio-button value="local"><span style="font-weight:500;">Local</span></mat-radio-button>
+                        <mat-radio-button value="cloud"><span style="font-weight:500;">via Cloud Connector</span></mat-radio-button>
+                      </mat-radio-group>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <br/>
+  <button type="button" matStepperNext (click)="step1Submitted()">Next</button>

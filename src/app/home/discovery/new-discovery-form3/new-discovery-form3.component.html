@@ -1,0 +1,39 @@
+<div id="credForm" [formGroup]= "regForm">
+    <div class ="container-fluid">
+        <div class = "row">
+            <div class ="col-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="form-group" formGroupName="credForm">
+                <label>REST Username</label>
+                <input type="text" class="form-control" formControlName="restUserName">
+                </div>
+            </div>
+            <div class ="col-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="form-group " formGroupName="credForm">
+                <label>REST Password</label>
+                <input type="text" class="form-control" formControlName="restPassword">
+                </div>
+            </div>
+        </div>
+
+        <div class = "mt-2 row">
+            <div class ="col-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="form-group" formGroupName="credForm">
+                <label>NETCONF Username</label>
+                <input type="text" class="form-control" formControlName="netconfUserName">
+                </div>
+            </div>
+            <div class ="col-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="form-group" formGroupName="credForm">
+                    <label>NETCONF Password</label>
+                    <input type="text" class="form-control" formControlName="netconfPassword">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br/>
+<button type="button" matStepperPrevious>Back</button>
+&nbsp;
+<button type="button" matStepperNext (click)="step3Submitted()">Next</button>
+

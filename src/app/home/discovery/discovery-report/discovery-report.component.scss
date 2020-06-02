@@ -1,0 +1,90 @@
+::ng-deep .cdk-overlay-pane
+{
+
+    pointer-events: auto;
+    width: 83%!important;
+
+    width: 63% !important;
+    bottom: 0% !important;
+    right: 0% !important;
+    height: 100% !important;
+    z-index: 9 !important;
+    position: relative!important;
+    // top:5%;
+    top:5%
+
+}
+::ng-deep .mat-paginator-page-size {
+    display: flex;
+    align-items: baseline;
+    margin-right: 8px;
+    position: fixed;
+
+    margin: 0;
+    padding: 0!important;
+    //  left: 3%!important;
+    //  top: 0%;s
+
+}
+.badge-success
+{
+width: 50px;
+color: #fff;
+background-color: red;
+}
+
+.mat-header-cell
+{
+color : black;
+font-size: medium;
+
+}
+.mdb-color {
+    /* background-color: #97614e; */
+    background-color: #295670;
+}
+.modal-header
+{
+    width: 1000px;
+    position: relative;
+    right: 5%;
+    bottom: 24px;
+}
+
+.modal-title
+{
+    color : white;
+}
+.close
+{
+    position: relative;
+    right: 2%;
+    bottom: 11px;
+}
+
+table{
+    width: 100%;
+}
+::ng-deep .mat-elevation-z8
+{
+    box-shadow: unset!important;
+}
+table {
+    width: 100%;
+  }
+  tr.example-detail-row {
+    height: 0;
+  }
+  .example-element-detail {
+    overflow: hidden;
+    display: flex;
+  }
+  .example-element-row td {
+    border-bottom-width: 0;
+  }
+
+  .expnadable
+  {
+      overflow: scroll;
+      width: 100%;
+  }

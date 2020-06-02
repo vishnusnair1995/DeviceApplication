@@ -1,0 +1,186 @@
+.setBg
+{
+    background-color: white;
+}
+.mat-paginator
+{
+    background: content-box;;
+}
+.mat-raised-button
+{
+    font-size: 14px;
+    color: white;
+    font-style: normal;
+    background: #295670;
+    border-color: #295670;
+}
+::ng-deep .mat-paginator-page-size {
+    display: flex;
+    align-items: baseline;
+    margin-right: 8px;
+    position: fixed;
+    top: 16%;
+    left: 19%;
+    margin: 0;
+    padding: 0;
+}
+.mat-table {
+    background: #fff;
+    width: 100%;
+}
+.align
+{
+    position: relative;
+    left: 10%;
+
+}
+
+.alignRight
+{
+    position:relative;
+    left: 50%;
+}
+
+table{
+    width: 100%;
+   }
+   .mat-column-id {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 15% !important;
+    width: 15% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    word-break: break-word;
+
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+   .mat-column-userId {
+     word-wrap: break-word !important;
+     white-space: unset !important;
+     flex: 0 0 20% !important;
+     width: 20% !important;
+     overflow-wrap: break-word;
+     word-wrap: break-word;
+
+     word-break: break-word;
+
+     -ms-hyphens: auto;
+     -moz-hyphens: auto;
+     -webkit-hyphens: auto;
+     hyphens: auto;
+   }
+
+   .mat-column-operation {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 7% !important;
+    width: 7% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    word-break: break-word;
+
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  .mat-column-fullName {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 25% !important;
+    width: 25% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    word-break: break-word;
+
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  .mat-column-email {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 25% !important;
+    width: 25% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    word-break: break-word;
+
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  .mat-column-editOperation {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 3.3% !important;
+    width: 3.3% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    word-break: break-word;
+
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  .mat-column-deleteOperation {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 3.3% !important;
+    width: 3.3% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    word-break: break-word;
+
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  .align-Left
+  {
+      position: relative;
+      margin-left: auto;
+      left: auto;
+
+  }
+  .mat-header-cell
+  {
+  color : black;
+  font-size: medium;
+
+  }
+
+.addCursor
+{
+  pointer-events: visible;
+  cursor: pointer;
+}
+
+.text-ellipsis {
+  max-height: 75px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+::ng-deep .mat-paginator-page-size {
+  position: absolute!important;
+}

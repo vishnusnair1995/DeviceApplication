@@ -1,0 +1,112 @@
+
+
+  .login-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*overflow: auto;*/
+    background-image: url('src/assets/falconwallpaper.jpg');
+    background-size: cover;
+  }
+.form-section
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+}
+input
+{
+    background: rgba(0, 0, 0, 0.3);
+}
+.login-button
+{
+    font-size: 18px!important;
+    width: 100%;
+}
+//   .login-form {
+//     max-width: 360px;
+//   }
+
+//   .card {
+//     background-color: #F7F7F7;
+//     /* just in case there no content*/
+//     padding: 20px 25px 30px;
+//     /*margin: 0 auto 25px;
+//     margin-top: 50px;*/
+//     margin: 4% auto 25px;
+//     /* shadows and rounded borders */
+//     -moz-border-radius: 2px;
+//     -webkit-border-radius: 2px;
+//     border-radius: 2px;
+//     -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+//     -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+//     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+//     opacity: 0.8;
+//   }
+form{
+    padding: 1px;
+}
+input {
+     width: 100%;
+     margin-bottom: 10px;
+     background: rgba(0, 0, 0, 0.3);
+     border: none;
+     outline: none;
+     padding: 10px;
+     font-size: 16px;
+     color: #fff;
+     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+     border: 1px solid rgba(0, 0, 0, 0.3);
+     border-radius: 4px;
+
+}
+::placeholder
+{
+    color: white;
+    font-size: large;
+}
+.form-control
+{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white!important;
+    font-size: 16px!important;
+}
+// .btnColor{
+// 	background-color:#3b96bf;
+// 	border-color:#3b96bf;
+// }
+// .btnColor:hover {
+// 	background-color:#3e83a2;
+// 	border-color:#3e83a2;
+// }
+// .logn{
+//   position: absolute;
+//   top: 30%;
+//   left: 50%;
+//   width: 300px;
+//   height: 300px;
+//   transform: translate(-50%, -50%);
+// }
+// .login-btn {
+//     font-size: 18px!important;
+// }
+// .btn-primary {
+//     color: #fff!important;
+//     background-color: #1a75a6!important;
+//     border-color: #1a75a6!important;
+// }
+// ::placeholder {
+//      color: #ffffff;
+//      opacity: 1;
+// }
+
+// .login-page
+// {
+//     background-image: url('src/assets/falconwallpaper.jpg');
+// }
+

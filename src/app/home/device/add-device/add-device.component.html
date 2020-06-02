@@ -1,0 +1,50 @@
+ <!-- <div class="container">
+    <h2 class="text-center">Leaflet Map</h2>
+
+    <div id="contain-map" class="m-auto" style="height: 600px; width: 1000px"></div>
+
+    <pre class="text-center">Search key: Google Map, Leaflet Map</pre>
+    <pre class="text-center">Author by DaiDH</pre>
+  </div> -->
+
+  <div class="modal-content">
+    <div class="modal-header" style="background: #295670;color:white;padding:10px;border-top-right-radius: 0;
+    border-top-left-radius: 0;">
+      <h4 id="modalHeader" style ="color:white">Create Device Group</h4>
+
+    </div>
+    <div class="modal-body">
+
+<div class ="container-fluid">
+  <div class ="row">
+    <div class = "col-sm-12 col-12 col-lg-12 col-md-12">
+      <div class="form-group">
+        <label for="recipient-name" class="col-form-label">Device Group Name:</label>
+        <input type="text" class="form-control" [(ngModel)] = "deviceName" id="foreignSource" maxlength="100" style="width: 100%;">
+      </div>
+    </div>
+  </div>
+  <div class ="row">
+    <div class = "col-sm-12 col-12 col-lg-12 col-md-12">
+      <div class="form-group">
+        <label for="recipient-name" class="col-form-label">Location</label>
+        <input type="text" class="form-control"  [(ngModel)] = "locationName" id="foreignSource" maxlength="100" style="width: 100%;">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class = "col-sm-12 col-12 col-lg-12 col-md-12">
+      <div class="container">
+        <div id="contain-map" class="m-auto" style="height: 269px;
+        width: 570px;
+        position: relative;
+        right: 43px;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+    <button type="button" id="SaveButton" class="btn add-btn btn-primary" action="add">Create</button>
+  </div>
+</div>

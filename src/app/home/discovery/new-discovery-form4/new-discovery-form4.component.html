@@ -1,0 +1,24 @@
+<div *ngIf="formSubmitted">
+    <h4>Details submitted successfully</h4>
+  </div>
+  <div *ngIf="!formSubmitted">
+    <div id="schedule" [formGroup]= "regForm">
+      <div class ="container-fluid">
+          <div class ="row">
+            <div class="form-group" formGroupName="schedule">
+                <label>Run mode</label>
+                <div class ="mt-2"></div>
+                <mat-radio-group aria-label="Select an option" formControlName="runMode">
+                    <mat-radio-button value="manual"><span style="font-weight:500;">Manual</span></mat-radio-button>
+                    <mat-radio-button value="schedule"><span style="font-weight:500;">Schedule</span></mat-radio-button>
+                  </mat-radio-group>
+            </div>
+
+          </div>
+      </div>
+</div>
+    <button type="button" matStepperPrevious>Back</button>
+    &nbsp;
+    <button type="button" (click)="submit()">Submit</button>
+  </div>
+

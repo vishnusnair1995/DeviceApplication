@@ -1,0 +1,55 @@
+
+
+    <mat-table [dataSource]="dataSource" matSort>
+
+
+      <!-- ID Column -->
+      <ng-container matColumnDef="devicename">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+            Device Name  </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.devicename}} </mat-cell>
+      </ng-container>
+
+      <!-- Progress Column -->
+      <ng-container matColumnDef="devicegroup">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Device Group </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.devicegroup}} </mat-cell>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="cloudconnector">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Cloud Connector  </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.cloudconnector}} </mat-cell>
+      </ng-container>
+
+      <!-- Color Column -->
+      <ng-container matColumnDef="syslocation">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> SysLocation  </mat-header-cell>
+        <mat-cell *matCellDef="let row" [style.color]="row.syslocation"> {{row.syslocation}} </mat-cell>
+      </ng-container>
+
+         <!-- Color Column -->
+         <ng-container matColumnDef="status">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Status  </mat-header-cell>
+            <mat-cell *matCellDef="let row" [style.status]="row.status">
+                 <span class="badge-success badge">
+                     {{row.status}}
+                 </span>
+            </mat-cell>
+          </ng-container>
+
+
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;">
+      </mat-row>
+
+    </mat-table>
+    <mat-paginator [length]="5"
+    [pageSize]="4" [pageSizeOptions]="[4, 8, 12, 16]"></mat-paginator>
+
+
+
+  <!-- Copyright 2018 Google Inc. All Rights Reserved.
+      Use of this source code is governed by an MIT-style license that
+      can be found in the LICENSE file at http://angular.io/license -->

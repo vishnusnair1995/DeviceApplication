@@ -1,0 +1,95 @@
+@import '../../styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+
+@include nb-install-component() {
+  .menu-sidebar ::ng-deep .scrollable {
+    padding-top: nb-theme(layout-padding-top);
+  }
+}
+// ::ng-deep .layout nb-layout-header
+// {
+//   margin-left: 15%!important;
+//   width: 85%!important;
+// }
+@media screen and (min-width :1296px)
+{
+ .changeWidth
+{
+  margin-left: 16.9% !important;
+  width: 83% !important;
+}
+.staticWidth
+{
+  margin-left: 3.75%!important;
+  width: 97%!important;
+}
+}
+ nb-sidebar
+{
+  position: inherit!important;
+  margin-top: -5%!important;
+  background-color: #222e3c;
+}
+
+.content
+{
+  background-color: white;
+}
+::ng-deep .scrollable .menu-title
+{
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+::ng-deep .nb-theme-default nb-menu .menu-item a:focus
+{
+  background-color: white!important;
+
+
+}
+::ng-deep .nb-theme-default nb-menu .menu-item a
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+
+}
+
+::ng-deep .nb-theme-default nb-menu .menu-item a:focus .menu-title
+{
+  color: black!important;
+
+
+}
+::ng-deep .nb-theme-default nb-menu .menu-item  .menu-icon
+{
+  color: white;
+}
+::ng-deep .nb-theme-default nb-menu .menu-item a:focus .menu-icon
+{
+  color: black;
+}
+::ng-deep .nb-theme-default nb-menu .menu-item
+{
+border-bottom: none!important;
+}
+::ng-deep .scrollable
+{
+  background-color:#222e3c!important;
+  background: #222e3c!important;
+}
+
+::ng-deep .nb-theme-default  .layout-container  .main-container
+{
+  position: relative!important;
+  top: 0!important;
+  bottom: auto!important;
+
+  min-height: 100vh!important;
+}
+
+::ng-deep.nb-theme-default .scrollable-container
+{
+  overflow: unset!important;
+}

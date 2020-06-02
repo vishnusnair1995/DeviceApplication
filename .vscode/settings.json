@@ -1,0 +1,5 @@
+{
+    "files.saveConflictResolution": "overwriteFileOnDisk",
+    "gitlens.views.repositories.showBranchComparison": null,
+    "editor.codeActionsOnSave": null
+}
